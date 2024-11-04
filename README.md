@@ -9,6 +9,24 @@
 ### 已測試支援格式
 - EPUB
 
+### 特別注意
+- 原始EPUB檔中`<dc:language>`標籤中的語言代碼需為`zh-hant`或`zh`，請勿使用`zh-TW`或`zh-CN`。
+- 原始EPUB檔中存放文字的`html`或`xhtml`文件頭部需包含`xml:lang="zh-TW" lang="zh-TW"`，全部檔案中至少應有半數以上的文件符合此條件，請勿使用`zh-hant`，`zh-CN`或`zh`。
+
+  正確的範例如下：
+  ```html
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW" lang="zh-TW">
+  ```
+  或如下形式：
+  ```xhtml
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="zh-TW" lang="zh-TW">
+  ```
+
+  確定`xml:lang`和`lang`屬性值皆為`zh-TW`，且位於文件中。
+
+### 故障排除
+- 通過calibre之Send to Kindle方式傳送的文件，可能會因為calibre導致檔案不能被Kindle辨識為繁體中文。若遇到此問題，請在Send to Kindle後，再次將原始kfx檔拷貝至Kindle設備中，替換calibre之kfx檔案。
+
 ### 變更之程式碼
 
 於 `/kfxlib/original_source_epub.py` 第 628 行（在 2.11.0 版本中），加入以下程式碼：
