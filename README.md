@@ -11,7 +11,7 @@
 
 ### 特別注意
 - 原始EPUB檔中`<dc:language>`標籤中的語言代碼需為`zh-hant`或`zh`，請勿使用`zh-TW`或`zh-CN`。
-- 原始EPUB檔中存放文字的`html`或`xhtml`文件頭部需包含`xml:lang="zh-TW" lang="zh-TW"`，全部檔案中至少應有半數以上的文件符合此條件，請勿使用`zh-hant`，`zh-CN`或`zh`。
+- 原始EPUB檔中存放文字的`html`或`xhtml`檔案頭部需包含`xml:lang="zh-TW" lang="zh-TW"`，全部檔案中至少應有半數以上的檔案符合此條件，請勿使用`zh-hant`，`zh-CN`或`zh`。
 
   正確的範例如下：
   ```html
@@ -25,7 +25,7 @@
   確定`xml:lang`和`lang`屬性值皆為`zh-TW`，且位於文件中。
 
 ### 故障排除
-- 通過calibre之Send to Kindle方式傳送的文件，可能會因為calibre導致檔案不能被Kindle辨識為繁體中文。若遇到此問題，請在Send to Kindle後，再次將原始kfx檔拷貝至Kindle設備中，替換calibre之kfx檔案。
+- 通過calibre之Send to Kindle方式傳送的書籍檔案，可能會因為calibre導致檔案不能被Kindle辨識為繁體中文。若遇到此問題，請在Send to Kindle後，再次將原始kfx檔拷貝至Kindle設備中，替換calibre之kfx檔案。
 
 ### 變更之程式碼
 
@@ -59,4 +59,4 @@ if FIX_LANGUAGE_SUFFIX and "-" not in lang.text:
 
 ### 許可 LICENSE
 
-本方法撰寫於GitHub之「[lcandy2/calibre-kfx-output-fix-traditional-chinese](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese)」存儲庫，該README.md文件遵循「[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hant)」許可，除該文件之外其他位於存儲庫中的程式碼文件，遵循原作者「John Howell」之「GPL v3」許可。
+本方法撰寫於GitHub之「[lcandy2/calibre-kfx-output-fix-traditional-chinese](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese)」存儲庫，該README.md檔遵循「[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hant)」許可，除該檔案之外其他位於存儲庫中的程式碼檔案，遵循原作者「John Howell」之「GPL v3」許可。
