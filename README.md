@@ -4,7 +4,11 @@
 最新版本2.11.0，請於「[Release](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese/releases)」頁面中下載該擴充。
 
 ### 效果預覽
-<img src="https://github.com/user-attachments/assets/fd19382e-7952-47c0-8536-718145ae4b6d" height="480" />
+| 橫排                                                         | 直排                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="https://github.com/user-attachments/assets/fd19382e-7952-47c0-8536-718145ae4b6d" alt="橫排效果展示（《少年來了》段落節選）" height="480" /> | <img src="https://github.com/user-attachments/assets/e25b5537-df87-4f55-aad5-16c119e1e6a1" alt="直排效果展示（《被討厭的勇氣 二部曲完結篇：人生幸福的行動指南》節選）" height="480" /> |
+
+
 
 ### 已測試支援格式
 - EPUB
