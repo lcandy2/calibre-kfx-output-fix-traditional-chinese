@@ -310,7 +310,11 @@ def urlrelpath(url, ref_from=None, working_dir=None, quote=True):
     if ref_from is not None:
         working_dir = dirname(ref_from)
 
-    purl = urllib.parse.urlparse(url, INTERNAL_FILE_SCHEME)
+    try:
+        purl = urllib.parse.urlparse(url, INTERNAL_FILE_SCHEME)
+    except Exception:
+        return url
+
     if purl.scheme != INTERNAL_FILE_SCHEME or purl.netloc != "":
         return url
 

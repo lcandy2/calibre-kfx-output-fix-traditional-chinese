@@ -183,6 +183,7 @@ class KindlePreviewer(ConversionApplication):
             33538048: "3.85.1",
             36281344: "3.86.0",
             36311040: "3.87.0",
+            36380672: "3.88.0",
             }
 
     if IS_MACOS:

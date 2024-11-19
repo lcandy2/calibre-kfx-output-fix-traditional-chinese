@@ -88,7 +88,10 @@ class KFXMetadataWriter(MetadataWriterPlugin):
         elif mi.cover:
             md.cover_image_data = ("jpg", open(mi.cover, 'rb').read())
 
-        if not tweaks.get("kfx_output_ignore_asin_metadata", False):
+        if prefs.get("cde_type_pdoc", False):
+            md.cde_content_type = "PDOC"
+            md.asin = True
+        elif not tweaks.get("kfx_output_ignore_asin_metadata", False):
             value = mi.identifiers.get("mobi-asin")
             if value is not None and re.match(ASIN_RE, value):
                 md.asin = value
@@ -102,8 +105,8 @@ class KFXMetadataWriter(MetadataWriterPlugin):
                     if value is not None and re.match(ASIN_RE, value):
                         md.asin = value
 
-        if md.asin:
-            md.cde_content_type = "EBOK"
+            if md.asin:
+                md.cde_content_type = "EBOK"
 
         if prefs.get("approximate_pages", False):
             page_count = 0

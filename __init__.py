@@ -35,7 +35,7 @@ class KFXOutput(OutputFormatPlugin):
     name = "KFX Output (Fix Traditional Chinese)"
     author = "jhowell"
     file_type = "kfx"
-    version = (2, 11, 0)
+    version = (2, 12, 0)
     minimum_calibre_version = (5, 0, 0)     # Python 3.8.5
     supported_platforms = ["windows", "osx", "linux"]
 
