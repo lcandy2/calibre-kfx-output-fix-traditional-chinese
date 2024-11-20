@@ -1,7 +1,7 @@
 # 支援繁體中文（台灣）之 Calibre KFX Output plugin
 由 @lcandy2 修改自 John Howells
 
-最新版本2.11.0，請於「[Release](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese/releases)」頁面中下載該擴充。
+最新版本2.12.0，點此「[下載](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese/releases/latest/download/KFX.Output_fix-zh-hant.zip)」，或在「[Release](https://github.com/lcandy2/calibre-kfx-output-fix-traditional-chinese/releases)」頁面中了解歷史版本。
 
 ### 效果預覽
 | 橫排                                                         | 直排                                                         |
